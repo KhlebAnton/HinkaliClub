@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хинкали Club</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img class="logo__img" src="./img/logo.png" alt="Логотип">
+            </div>
+            <nav class="header__nav">
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="#stocks">Акции</a></li>
+                    <li class="nav-item"><a href="#menu">Меню</a></li>
+                    <li class="nav-item"><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__links">
+                <div class="links-items">
+                    <div class="links-item">
+                        <a href="#">
+                            <svg width="29" height="29" viewBox="0 0 27 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.2649 9.42607L17.8569 18.4406C17.8375 18.5649 17.7876 18.6824 17.7115 18.7826C17.6355 18.8828 17.5357 18.9625 17.4212 19.0146C17.3067 19.0668 17.1811 19.0896 17.0556 19.0812C16.9301 19.0728 16.8087 19.0333 16.7022 18.9663L11.9876 16.0123C11.8896 15.951 11.8069 15.8681 11.7458 15.77C11.6847 15.6719 11.6467 15.5611 11.6349 15.4462C11.6231 15.3312 11.6376 15.215 11.6775 15.1065C11.7174 14.998 11.7814 14.9 11.8649 14.8201L15.7786 11.0691C15.8226 11.0277 15.7709 10.9593 15.7192 10.9903L10.0462 14.3848C9.70904 14.5875 9.30861 14.6579 8.92248 14.5824L6.86873 14.1859C6.12731 14.0425 6.02527 13.0247 6.72148 12.7366L17.7032 8.1964C17.8903 8.11857 18.0948 8.09203 18.2955 8.11954C18.4963 8.14705 18.6861 8.2276 18.8453 8.35289C19.0045 8.47819 19.1275 8.64368 19.2015 8.83232C19.2754 9.02097 19.2978 9.22593 19.2661 9.42607"
+                                    fill="black" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M13.5003 0.203598C6.15715 0.203598 0.203857 6.15689 0.203857 13.5C0.203857 20.8431 6.15715 26.7964 13.5003 26.7964C20.8434 26.7964 26.7967 20.8431 26.7967 13.5C26.7967 6.15689 20.8434 0.203598 13.5003 0.203598ZM2.48236 13.5C2.48236 12.0531 2.76734 10.6204 3.32105 9.28364C3.87475 7.94689 4.68632 6.73228 5.70943 5.70917C6.73254 4.68606 7.94714 3.87449 9.2839 3.32079C10.6207 2.76708 12.0534 2.4821 13.5003 2.4821C14.9472 2.4821 16.3799 2.76708 17.7166 3.32079C19.0534 3.87449 20.268 4.68606 21.2911 5.70917C22.3142 6.73228 23.1258 7.94689 23.6795 9.28364C24.2332 10.6204 24.5182 12.0531 24.5182 13.5C24.5182 16.4221 23.3574 19.2246 21.2911 21.2909C19.2249 23.3571 16.4224 24.5179 13.5003 24.5179C10.5781 24.5179 7.77569 23.3571 5.70943 21.2909C3.64317 19.2246 2.48236 16.4221 2.48236 13.5Z"
+                                    fill="black" />
+                            </svg>
+
+                        </a>
+
+                    </div>
+                    <div class="links-item">
+                        <a href="#">
+                            <svg width="29" height="29" viewBox="0 0 27 29" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="1.35" y="1.925" width="24.3" height="25.65" rx="12.15" stroke="black"
+                                    stroke-width="2.7" />
+                                <path
+                                    d="M20.0078 17.8264L17.265 17.0451C17.0881 16.9939 16.9006 16.9914 16.7223 17.0379C16.544 17.0844 16.3816 17.1782 16.2523 17.3093L15.5819 17.9883C15.4428 18.1283 15.2658 18.2245 15.0726 18.2649C14.8795 18.3053 14.6787 18.2881 14.4953 18.2155C13.1984 17.6943 10.4684 15.2853 9.77102 14.0793C9.67251 13.9093 9.62741 13.7135 9.6416 13.5174C9.65578 13.3214 9.72859 13.1341 9.85057 12.98L10.4358 12.2272C10.5484 12.0829 10.6197 11.9107 10.642 11.7291C10.6643 11.5474 10.6367 11.3631 10.5622 11.1959L9.40882 8.60515C9.34359 8.46034 9.24566 8.33264 9.12273 8.23208C8.9998 8.13152 8.85522 8.06084 8.70036 8.0256C8.5455 7.99036 8.38457 7.99152 8.23023 8.02899C8.07589 8.06645 7.93235 8.13921 7.81088 8.24153C7.04529 8.88497 6.13623 9.86078 6.02686 10.9445C5.83227 12.8521 6.6561 15.2569 9.77244 18.1459C13.3731 21.4824 16.258 21.9242 18.1343 21.4711C19.1996 21.2154 20.0518 20.1885 20.5873 19.349C20.673 19.2157 20.7261 19.0641 20.7425 18.9065C20.7589 18.7489 20.7381 18.5896 20.6817 18.4415C20.6253 18.2934 20.535 18.1606 20.418 18.0537C20.3009 17.9469 20.1604 17.869 20.0078 17.8264Z"
+                                    fill="black" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="links-item">
+                        <a class="btn" href="#">Сделать заказ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="burger" id="burger">
+                <svg width="44px" height="44px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+                    <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+                    <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+                  </g>
+                </svg>
+              </div>
+        </div>
+    </header>
+    <div id="hamburger-menu" class="mobile">
+        <div class="mobile__inner" id="menuWindow">
+          <div class="mobile__close" id="close">
+            <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+              stroke="#000000">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M19.207 6.207a1 1 0 0 0-1.414-1.414L12 10.586 6.207 4.793a1 1 0 0 0-1.414 1.414L10.586 12l-5.793 5.793a1 1 0 1 0 1.414 1.414L12 13.414l5.793 5.793a1 1 0 0 0 1.414-1.414L13.414 12l5.793-5.793z"
+                  fill="#000000"></path>
+              </g>
+            </svg>
+          </div>
+          <div class="mobile__nav">
+            <nav class="hamburger__nav">
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="#stocks">Акции</a></li>
+                    <li class="nav-item"><a href="#menu">Меню</a></li>
+                    <li class="nav-item"><a href="#contacts">Контакты</a></li>
+                    <li class="nav-item"><a class="btn" href="#">Сделать заказ</a></li>
+                </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    <main class="main">
+        <section class="section section-hero">
+            <div class="container">
+                <div class="section-hero__wrapper">
+                    <h1>Хинкали клаб - доставка</h1>
+                    <div class="section-hero__desc">
+                        <p class="section-hero__info">
+                            Место, где традиции грузинской кухни встречаются с теплом и гостеприимством
+                        </p>
+                        <p class="section-hero__address">
+                            МОСКВА, НОВОЯСЕНЕВСКИЙ ПР., 1 <br>
+                            ТЕЛ.: <a href="tel:+79100033231"> +7 (910) 003-32-31 </a><br>
+                            С 11:00 до 21:30 <br>
+                        </p>
+                        <a class="btn primary-btn" href="#menu">Посмотреть меню</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="stocks" class="section section-stocks">
+            <div class="container">
+                <h2>Наши акции</h2>
+                <div class="slider-wrapper">
+                    <div class="slider-btns">
+                        <div class=" btn-prev">
+                            <svg width="45" height="45" viewBox="0 0 45 45" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="44" y="44" width="43" height="43" rx="14" transform="rotate(-180 44 44)"
+                                    stroke="#880D1F" stroke-width="2" />
+                                <path
+                                    d="M34 23C34.5523 23 35 22.5523 35 22C35 21.4477 34.5523 21 34 21V23ZM10.2929 21.2929C9.90237 21.6834 9.90237 22.3166 10.2929 22.7071L16.6569 29.0711C17.0474 29.4616 17.6805 29.4616 18.0711 29.0711C18.4616 28.6805 18.4616 28.0474 18.0711 27.6569L12.4142 22L18.0711 16.3431C18.4616 15.9526 18.4616 15.3195 18.0711 14.9289C17.6805 14.5384 17.0474 14.5384 16.6569 14.9289L10.2929 21.2929ZM34 21L11 21L11 23L34 23V21Z"
+                                    fill="#880D1F" />
+                            </svg>
+
+                        </div>
+                        <div class=" btn-next">
+                            <svg width="45" height="45" viewBox="0 0 45 45" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="45" height="45" rx="15" fill="#880D1F" />
+                                <path
+                                    d="M11 22C10.4477 22 10 22.4477 10 23C10 23.5523 10.4477 24 11 24L11 22ZM34.7071 23.7071C35.0976 23.3166 35.0976 22.6834 34.7071 22.2929L28.3431 15.9289C27.9526 15.5384 27.3195 15.5384 26.9289 15.9289C26.5384 16.3195 26.5384 16.9526 26.9289 17.3431L32.5858 23L26.9289 28.6569C26.5384 29.0474 26.5384 29.6805 26.9289 30.0711C27.3195 30.4616 27.9526 30.4616 28.3431 30.0711L34.7071 23.7071ZM11 24L34 24L34 22L11 22L11 24Z"
+                                    fill="white" />
+                            </svg>
+
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="slide slide-big">
+                            <img class="slide__img" src="./img/bg-stocks-1.png">
+                            <h3 class="slide__title">Акции на хинкали</h3>
+                            <p class="slide__desc">20% на вторую порцию</p>
+                        </div>
+                        <div class="slide">
+                            <img class="slide__img" src="./img/stocks_small.png">
+                            <h3 class="slide__title">Скидки на горячие блюда <span class="slide__title-stock">40%</span>
+                            </h3>
+                        </div>
+                        <div class="slide">
+                            <img class="slide__img" src="./img/stocks_small.png">
+                            <h3 class="slide__title">Скидки на все салаты <span class="slide__title-stock">70%</span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="menu" class="section section-menu">
+            <div class="container">
+                <h2>Меню</h2>
+                <div class="menu">
+                    <ul class="menu__nav-items">
+                        <li class="menu__nav-item active">Все</li>
+                        <li class="menu__nav-item">Горячие блюда</li>
+                        <li class="menu__nav-item">Салаты</li>
+                        <li class="menu__nav-item">Выпечка</li>
+                        <li class="menu__nav-item">Напитки</li>
+                        <li class="menu__nav-item">Супы</li>
+                        <li class="menu__nav-item">Хинкали</li>
+                        <li class="menu__nav-item">Холодные закуски</li>
+                        <li class="menu__nav-item">Соусы</li>
+                    </ul>
+                    <div class="menu__items">
+                        <div class="menu__item">
+                            <img class="menu__item-img" src="./img/menu.jfif">
+                            <div class="menu__item-wrapper">
+                                <h4 class="menu__item-title">Грибной крем суп</h4>
+                                <div class="menu__item-desc">
+                                    <span class="menu__item-price">513 ₽</span>
+                                    <span class="menu__item-weight">300 г.</span>
+                                </div>
+                                <p class="menu__item-info">
+                                    Салат с обжаренными креветками, томатами, кальмаром, авокадо и заправкой
+                                </p>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <img class="menu__item-img" src="./img/menu.jfif">
+                            <div class="menu__item-wrapper">
+                                <h4 class="menu__item-title">Грибной крем суп</h4>
+                                <div class="menu__item-desc">
+                                    <span class="menu__item-price">513 ₽</span>
+                                    <span class="menu__item-weight">300 г.</span>
+                                </div>
+                                <p class="menu__item-info">
+                                    Салат с обжаренными креветками, томатами, кальмаром, авокадо и заправкой
+                                </p>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <img class="menu__item-img" src="./img/menu.jfif">
+                            <div class="menu__item-wrapper">
+                                <h4 class="menu__item-title">Грибной крем суп</h4>
+                                <div class="menu__item-desc">
+                                    <span class="menu__item-price">513 ₽</span>
+                                    <span class="menu__item-weight">300 г.</span>
+                                </div>
+                                <p class="menu__item-info">
+                                    Салат с обжаренными креветками, томатами, кальмаром, авокадо и заправкой
+                                </p>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <img class="menu__item-img" src="./img/menu.jfif">
+                            <div class="menu__item-wrapper">
+                                <h4 class="menu__item-title">Грибной крем суп</h4>
+                                <div class="menu__item-desc">
+                                    <span class="menu__item-price">513 ₽</span>
+                                    <span class="menu__item-weight">300 г.</span>
+                                </div>
+                                <p class="menu__item-info">
+                                    Салат с обжаренными креветками, томатами, кальмаром, авокадо и заправкой
+                                </p>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <img class="menu__item-img" src="./img/menu.jfif">
+                            <div class="menu__item-wrapper">
+                                <h4 class="menu__item-title">Грибной крем суп</h4>
+                                <div class="menu__item-desc">
+                                    <span class="menu__item-price">513 ₽</span>
+                                    <span class="menu__item-weight">300 г.</span>
+                                </div>
+                                <p class="menu__item-info">
+                                    Салат с обжаренными креветками, томатами, кальмаром, авокадо и заправкой
+                                </p>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <img class="menu__item-img" src="./img/menu.jfif">
+                            <div class="menu__item-wrapper">
+                                <h4 class="menu__item-title">Грибной крем суп</h4>
+                                <div class="menu__item-desc">
+                                    <span class="menu__item-price">513 ₽</span>
+                                    <span class="menu__item-weight">300 г.</span>
+                                </div>
+                                <p class="menu__item-info">
+                                    Салат с обжаренными креветками, томатами, кальмаром, авокадо и заправкой
+                                </p>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <img class="menu__item-img" src="./img/menu.jfif">
+                            <div class="menu__item-wrapper">
+                                <h4 class="menu__item-title">Грибной крем суп</h4>
+                                <div class="menu__item-desc">
+                                    <span class="menu__item-price">513 ₽</span>
+                                    <span class="menu__item-weight">300 г.</span>
+                                </div>
+                                <p class="menu__item-info">
+                                    Салат с обжаренными креветками, томатами, кальмаром, авокадо и заправкой
+                                </p>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <img class="menu__item-img" src="./img/menu.jfif">
+                            <div class="menu__item-wrapper">
+                                <h4 class="menu__item-title">Грибной крем суп</h4>
+                                <div class="menu__item-desc">
+                                    <span class="menu__item-price">513 ₽</span>
+                                    <span class="menu__item-weight">300 г.</span>
+                                </div>
+                                <p class="menu__item-info">
+                                    Салат с обжаренными креветками, томатами, кальмаром, авокадо и заправкой
+                                </p>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <img class="menu__item-img" src="./img/menu.jfif">
+                            <div class="menu__item-wrapper">
+                                <h4 class="menu__item-title">Грибной крем суп</h4>
+                                <div class="menu__item-desc">
+                                    <span class="menu__item-price">513 ₽</span>
+                                    <span class="menu__item-weight">300 г.</span>
+                                </div>
+                                <p class="menu__item-info">
+                                    Салат с обжаренными креветками, томатами, кальмаром, авокадо и заправкой
+                                </p>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <img class="menu__item-img" src="./img/menu.jfif">
+                            <div class="menu__item-wrapper">
+                                <h4 class="menu__item-title">Грибной крем суп</h4>
+                                <div class="menu__item-desc">
+                                    <span class="menu__item-price">513 ₽</span>
+                                    <span class="menu__item-weight">300 г.</span>
+                                </div>
+                                <p class="menu__item-info">
+                                    Салат с обжаренными креветками, томатами, кальмаром, авокадо и заправкой
+                                </p>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <img class="menu__item-img" src="./img/menu.jfif">
+                            <div class="menu__item-wrapper">
+                                <h4 class="menu__item-title">Грибной крем суп</h4>
+                                <div class="menu__item-desc">
+                                    <span class="menu__item-price">513 ₽</span>
+                                    <span class="menu__item-weight">300 г.</span>
+                                </div>
+                                <p class="menu__item-info">
+                                    Салат с обжаренными креветками, томатами, кальмаром, авокадо и заправкой
+                                </p>
+                            </div>
+                        </div>
+                        <div class="menu__item">
+                            <img class="menu__item-img" src="./img/menu.jfif">
+                            <div class="menu__item-wrapper">
+                                <h4 class="menu__item-title">Грибной крем суп</h4>
+                                <div class="menu__item-desc">
+                                    <span class="menu__item-price">513 ₽</span>
+                                    <span class="menu__item-weight">300 г.</span>
+                                </div>
+                                <p class="menu__item-info">
+                                    Салат с обжаренными креветками, томатами, кальмаром, авокадо и заправкой
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn secondary-btn btn-more">
+                        <span>Показать еще</span>
+                        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7.5L6 12.5M6 12.5L11 7.5M6 12.5V0.5" stroke="#880D1F" stroke-width="1.5" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="contacts" class="section section-contacts">
+            <div class="container container-small">
+                <h2>Контакты</h2>
+                <p class="section__info">
+                    Мы всегда рады услышать от вас! Если у вас остались вопросы, предложения или вы хотите обсудить
+                    сотрудничество, пожалуйста, свяжитесь с нами удобным для вас способом. Наша команда готова
+                    предоставить необходимую информацию и
+                    помощь.
+                </p>
+                <div class="contacts-items">
+                    <div class="contacts-item">
+                        <div class="contacts-item__title">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.7701 15.9977C10.6161 15.9553 7.34581 15.5034 3.92082 12.0799C0.496633 8.65562 0.0454705 5.38676 0.00219731 4.23224C-0.0619111 2.47283 1.28597 0.76389 2.843 0.0964986C3.0305 0.0155519 3.23582 -0.015267 3.43883 0.00706618C3.64184 0.0293994 3.83555 0.104117 4.00096 0.223888C5.28312 1.15808 6.16782 2.57138 6.9275 3.68263C7.09465 3.92677 7.16612 4.22387 7.12829 4.5173C7.09046 4.81074 6.94597 5.08 6.72236 5.27379L5.15891 6.43472C5.08338 6.48925 5.03021 6.56934 5.00928 6.66011C4.98835 6.75088 5.00109 6.84616 5.04512 6.92825C5.39932 7.57161 6.02919 8.52983 6.7504 9.2509C7.47162 9.97197 8.47572 10.6434 9.16408 11.0376C9.25039 11.086 9.35198 11.0995 9.44797 11.0754C9.54396 11.0513 9.62705 10.9913 9.68016 10.9078L10.6979 9.35906C10.885 9.11057 11.161 8.9441 11.4681 8.89452C11.7752 8.84493 12.0896 8.91608 12.3455 9.09307C13.473 9.87343 14.7888 10.7427 15.752 11.9757C15.8815 12.1423 15.9639 12.3406 15.9906 12.5499C16.0172 12.7592 15.9871 12.9718 15.9035 13.1655C15.2327 14.7302 13.5355 16.0626 11.7701 15.9977Z"
+                                    fill="#880D1F" />
+                            </svg>
+
+                            <span>Телефон</span>
+                        </div>
+                        <a class="contacts-item__link" href="tel:+79100033231">+7 (910) 003-32-31</a>
+                    </div>
+                    <div class="contacts-item">
+                        <div class="contacts-item__title">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.6 0H1.4C0.63 0 0.00699999 0.5625 0.00699999 1.25L0 8.75C0 9.4375 0.63 10 1.4 10H12.6C13.37 10 14 9.4375 14 8.75V1.25C14 0.5625 13.37 0 12.6 0ZM12.6 2.5L7 5.625L1.4 2.5V1.25L7 4.375L12.6 1.25V2.5Z"
+                                    fill="#880D1F" />
+                            </svg>
+
+                            <span>Email</span>
+                        </div>
+                        <a class="contacts-item__link" href="mailto:1138@mail.ru">1138@mail.ru</a>
+                    </div>
+                    <div class="contacts-item">
+                        <div class="contacts-item__title">
+                            <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.9836 1.82021L12.4707 10.8562C12.4498 10.9808 12.3961 11.0985 12.3144 11.199C12.2327 11.2994 12.1255 11.3793 12.0025 11.4316C11.8794 11.4838 11.7444 11.5067 11.6096 11.4983C11.4747 11.4898 11.3442 11.4503 11.2298 11.3831L6.1635 8.42207C6.0582 8.36062 5.96933 8.27757 5.90365 8.17923C5.83797 8.08089 5.79722 7.96986 5.7845 7.85461C5.77178 7.73936 5.78744 7.62292 5.83026 7.51416C5.87309 7.4054 5.94197 7.3072 6.03164 7.22703L10.2373 3.46711C10.2845 3.42568 10.229 3.35706 10.1735 3.38813L4.07731 6.79071C3.71497 6.99394 3.28467 7.06453 2.86973 6.9888L0.662783 6.59132C-0.13394 6.4476 -0.243594 5.42735 0.504548 5.13862L12.3055 0.587617C12.5065 0.509595 12.7262 0.482999 12.942 0.510572C13.1577 0.538145 13.3616 0.618889 13.5328 0.74448C13.7039 0.87007 13.836 1.03596 13.9155 1.22505C13.995 1.41414 14.019 1.61959 13.985 1.82021"
+                                    fill="#880D1F" />
+                            </svg>
+
+                            <span>Telegram</span>
+                        </div>
+                        <a class="contacts-item__link" href="#">Хинкали CLUB</a>
+                    </div>
+                    <div class="contacts-item">
+                        <div class="contacts-item__title">
+                            <svg width="14" height="18" viewBox="0 0 14 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.66667 0.666748C4.91005 0.66666 3.22438 1.35988 1.97604 2.59574C0.727692 3.8316 0.0175662 5.51022 0 7.26675C0 11.8334 5.875 16.9167 6.125 17.1334C6.27594 17.2625 6.46804 17.3335 6.66667 17.3335C6.86529 17.3335 7.05739 17.2625 7.20833 17.1334C7.5 16.9167 13.3333 11.8334 13.3333 7.26675C13.3158 5.51022 12.6056 3.8316 11.3573 2.59574C10.109 1.35988 8.42329 0.66666 6.66667 0.666748ZM6.66667 9.83342C6.0898 9.83342 5.5259 9.66236 5.04625 9.34187C4.56661 9.02138 4.19277 8.56586 3.97202 8.03291C3.75126 7.49996 3.6935 6.91351 3.80604 6.34773C3.91858 5.78196 4.19637 5.26226 4.60427 4.85435C5.01218 4.44645 5.53187 4.16866 6.09765 4.05612C6.66343 3.94358 7.24988 4.00134 7.78283 4.2221C8.31578 4.44286 8.7713 4.81669 9.09179 5.29634C9.41227 5.77598 9.58333 6.33989 9.58333 6.91675C9.58333 7.6903 9.27604 8.43216 8.72906 8.97914C8.18208 9.52612 7.44021 9.83342 6.66667 9.83342Z"
+                                    fill="#880D1F" />
+                            </svg>
+
+                            <span>Адрес</span>
+                        </div>
+                        <a class="contacts-item__link" href="#">Москва, новоясеневский проспект, 1</a>
+                    </div>
+                </div>
+                <div style="position:relative;overflow:hidden;"><a
+                        href="https://yandex.ru/maps/org/khinkali_club/76483452884/?utm_medium=mapframe&utm_source=maps"
+                        style="color:#eee;font-size:12px;position:absolute;top:0px;">Хинкали Club</a><a
+                        href="https://yandex.ru/maps/213/moscow/category/fast_food/184106386/?utm_medium=mapframe&utm_source=maps"
+                        style="color:#eee;font-size:12px;position:absolute;top:14px;">Быстрое питание в Москве</a><a
+                        href="https://yandex.ru/maps/213/moscow/category/restaurant/184106394/?utm_medium=mapframe&utm_source=maps"
+                        style="color:#eee;font-size:12px;position:absolute;top:28px;">Ресторан в Москве</a><iframe
+                        src="https://yandex.ru/map-widget/v1/?ll=37.509290%2C55.619472&mode=search&oid=76483452884&ol=biz&z=16"
+                        width="100%" height="460" frameborder="0" allowfullscreen="true"
+                        style="position:relative;"></iframe></div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="logo">
+                <img class="logo__img" src="./img/logo.png" alt="Логотип">
+            </div>
+            <nav class="footer__nav">
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="#stocks">Акции</a></li>
+                    <li class="nav-item"><a href="#menu">Меню</a></li>
+                    <li class="nav-item"><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="footer__links">
+                <div class="links-items">
+                    <div class="links-item">
+                        <a href="#">
+                            <svg width="29" height="29" viewBox="0 0 27 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.2649 9.42607L17.8569 18.4406C17.8375 18.5649 17.7876 18.6824 17.7115 18.7826C17.6355 18.8828 17.5357 18.9625 17.4212 19.0146C17.3067 19.0668 17.1811 19.0896 17.0556 19.0812C16.9301 19.0728 16.8087 19.0333 16.7022 18.9663L11.9876 16.0123C11.8896 15.951 11.8069 15.8681 11.7458 15.77C11.6847 15.6719 11.6467 15.5611 11.6349 15.4462C11.6231 15.3312 11.6376 15.215 11.6775 15.1065C11.7174 14.998 11.7814 14.9 11.8649 14.8201L15.7786 11.0691C15.8226 11.0277 15.7709 10.9593 15.7192 10.9903L10.0462 14.3848C9.70904 14.5875 9.30861 14.6579 8.92248 14.5824L6.86873 14.1859C6.12731 14.0425 6.02527 13.0247 6.72148 12.7366L17.7032 8.1964C17.8903 8.11857 18.0948 8.09203 18.2955 8.11954C18.4963 8.14705 18.6861 8.2276 18.8453 8.35289C19.0045 8.47819 19.1275 8.64368 19.2015 8.83232C19.2754 9.02097 19.2978 9.22593 19.2661 9.42607"
+                                    fill="black" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M13.5003 0.203598C6.15715 0.203598 0.203857 6.15689 0.203857 13.5C0.203857 20.8431 6.15715 26.7964 13.5003 26.7964C20.8434 26.7964 26.7967 20.8431 26.7967 13.5C26.7967 6.15689 20.8434 0.203598 13.5003 0.203598ZM2.48236 13.5C2.48236 12.0531 2.76734 10.6204 3.32105 9.28364C3.87475 7.94689 4.68632 6.73228 5.70943 5.70917C6.73254 4.68606 7.94714 3.87449 9.2839 3.32079C10.6207 2.76708 12.0534 2.4821 13.5003 2.4821C14.9472 2.4821 16.3799 2.76708 17.7166 3.32079C19.0534 3.87449 20.268 4.68606 21.2911 5.70917C22.3142 6.73228 23.1258 7.94689 23.6795 9.28364C24.2332 10.6204 24.5182 12.0531 24.5182 13.5C24.5182 16.4221 23.3574 19.2246 21.2911 21.2909C19.2249 23.3571 16.4224 24.5179 13.5003 24.5179C10.5781 24.5179 7.77569 23.3571 5.70943 21.2909C3.64317 19.2246 2.48236 16.4221 2.48236 13.5Z"
+                                    fill="black" />
+                            </svg>
+
+                        </a>
+
+                    </div>
+                    <div class="links-item">
+                        <a href="#">
+                            <svg width="29" height="29" viewBox="0 0 27 29" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="1.35" y="1.925" width="24.3" height="25.65" rx="12.15" stroke="black"
+                                    stroke-width="2.7" />
+                                <path
+                                    d="M20.0078 17.8264L17.265 17.0451C17.0881 16.9939 16.9006 16.9914 16.7223 17.0379C16.544 17.0844 16.3816 17.1782 16.2523 17.3093L15.5819 17.9883C15.4428 18.1283 15.2658 18.2245 15.0726 18.2649C14.8795 18.3053 14.6787 18.2881 14.4953 18.2155C13.1984 17.6943 10.4684 15.2853 9.77102 14.0793C9.67251 13.9093 9.62741 13.7135 9.6416 13.5174C9.65578 13.3214 9.72859 13.1341 9.85057 12.98L10.4358 12.2272C10.5484 12.0829 10.6197 11.9107 10.642 11.7291C10.6643 11.5474 10.6367 11.3631 10.5622 11.1959L9.40882 8.60515C9.34359 8.46034 9.24566 8.33264 9.12273 8.23208C8.9998 8.13152 8.85522 8.06084 8.70036 8.0256C8.5455 7.99036 8.38457 7.99152 8.23023 8.02899C8.07589 8.06645 7.93235 8.13921 7.81088 8.24153C7.04529 8.88497 6.13623 9.86078 6.02686 10.9445C5.83227 12.8521 6.6561 15.2569 9.77244 18.1459C13.3731 21.4824 16.258 21.9242 18.1343 21.4711C19.1996 21.2154 20.0518 20.1885 20.5873 19.349C20.673 19.2157 20.7261 19.0641 20.7425 18.9065C20.7589 18.7489 20.7381 18.5896 20.6817 18.4415C20.6253 18.2934 20.535 18.1606 20.418 18.0537C20.3009 17.9469 20.1604 17.869 20.0078 17.8264Z"
+                                    fill="black" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="links-item btn-links">
+                        <a class="btn" href="#">Сделать заказ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", (e) => {
+          let burger = document.querySelector("#burger");
+          let menu = document.querySelector("#hamburger-menu");
+          let menuWindow = document.querySelector("#menuWindow");
+          let close = document.querySelector("#close");
+          let menuLinks = document.querySelectorAll(".header__links > li");
+    
+          burger.addEventListener("click", (e) => {
+            menu.classList.add("active");
+          });
+          close.addEventListener("click", (e) => {
+            menu.classList.remove("active");
+          });
+    
+          menu.addEventListener("click", (e) => {
+            if (e.target == menu && e.target != menuWindow) {
+              menu.classList.remove("active");
+            }
+          });
+    
+        });
+    
+    
+      </script>
+</body>
+
+</html>
