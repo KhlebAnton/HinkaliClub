@@ -222,6 +222,9 @@ svg path {
     z-index: 1;
     position: relative;
 }
+.section-hero__wrapper {
+    margin-bottom: 40px;
+}
 
 .section-hero__desc {
     margin-top: 11px;
@@ -338,7 +341,8 @@ svg path {
 }
 
 .menu__nav-item:hover {
-    color: #880D1F;
+    background: #880D1F;
+    color: #FFFFFF;
 }
 
 .menu__nav-item.active {
@@ -355,7 +359,7 @@ svg path {
 
 .menu__items {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
@@ -363,7 +367,6 @@ svg path {
 
 .menu__item {
     max-width: 284px;
-
     width: 100%;
     border-radius: 20px;
     overflow: hidden;
@@ -374,6 +377,7 @@ svg path {
     padding: 16px 15px 12px;
     display: flex;
     flex-direction: column;
+    flex-grow: 2;
     gap: 6px;
 }
 
